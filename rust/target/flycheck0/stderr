@@ -1,1 +1,9 @@
-error: manifest path `/home/theianreis/project/problem/rust/Cargo.toml` does not exist
+error: can't find bin `01` at path `/home/theianreis/project/problem/rust/01.rs`
+ --> /home/theianreis/project/problem/rust/Cargo.toml
+error: can't find bin `01` at path `/home/theianreis/project/problem/rust/01.rs`
+ --> /home/theianreis/project/problem/rust/Cargo.toml
+error: can't find bin `02` at path `/home/theianreis/project/problem/rust/02.rs`
+ --> /home/theianreis/project/problem/rust/Cargo.toml
+error: can't find bin `02` at path `/home/theianreis/project/problem/rust/02.rs`
+ --> /home/theianreis/project/problem/rust/Cargo.toml
+error: could not compile due to 4 previous target resolution errors
