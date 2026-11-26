@@ -1,0 +1,145 @@
+EXERCICIOS DE RUST — 26 A 150
+
+Cada arquivo e um programa independente com enunciado, solucao e verificacoes.
+Execute na raiz do projeto: cargo run --bin 26
+Troque 26 pelo numero desejado. Nao sao necessarias dependencias externas.
+As entradas de exemplo ficam em main(); altere-as para praticar.
+Para tentar sozinho, leia o enunciado e implemente antes de consultar a solucao.
+
+Progressao:
+26–50: logica numerica e algoritmos basicos.
+51–70: vetores, buscas e ordenacoes.
+71–80: strings e busca de padroes.
+81–90: matrizes, prefixos e janelas.
+91–100: recursao, backtracking e programacao dinamica.
+101–120: pilhas, filas, listas, mapas e conjuntos.
+121–130: arvores binarias e heaps.
+131–140: grafos e caminhos minimos.
+141–150: estruturas avancadas e problemas de integracao.
+
+Indice:
+Exercicio 26: Encontre o maior de tres numeros sem ordenar.
+Exercicio 27: Encontre o menor e o maior valor de uma fatia, incluindo o caso vazio.
+Exercicio 28: Determine se um ano e bissexto pela regra do calendario gregoriano.
+Exercicio 29: Valide tres lados inteiros e classifique o triangulo.
+Exercicio 30: Implemente uma calculadora com tratamento de divisao por zero.
+Exercicio 31: Some os multiplos de 3 ou 5 menores que um limite.
+Exercicio 32: Conte os algarismos de um inteiro sem converter para texto.
+Exercicio 33: Some os algarismos de um numero natural.
+Exercicio 34: Inverta os algarismos de um numero e detecte overflow.
+Exercicio 35: Verifique se um inteiro natural e palindromo.
+Exercicio 36: Verifique primalidade testando divisores ate a raiz quadrada.
+Exercicio 37: Liste os primos ate um limite usando o crivo de Eratostenes.
+Exercicio 38: Calcule o maximo divisor comum pelo algoritmo de Euclides.
+Exercicio 39: Calcule o minimo multiplo comum com deteccao de overflow.
+Exercicio 40: Calcule o n-esimo Fibonacci iterativamente, com F(0) = 0.
+Exercicio 41: Calcule potencia inteira por exponenciacao binaria em O(log expoente).
+Exercicio 42: Converta um numero decimal para binario por divisoes sucessivas.
+Exercicio 43: Converta texto binario para decimal validando digitos e overflow.
+Exercicio 44: Verifique se um numero e perfeito: igual a soma de seus divisores proprios.
+Exercicio 45: Verifique numeros de Armstrong, como 153 = 1^3 + 5^3 + 3^3.
+Exercicio 46: Gere uma sequencia de Collatz com limite de passos e deteccao de overflow.
+Exercicio 47: Liste todos os divisores positivos de um numero em ordem crescente.
+Exercicio 48: Encontre o segundo maior valor distinto em uma unica passagem.
+Exercicio 49: Calcule as raizes reais de uma equacao quadratica com coeficientes finitos.
+Exercicio 50: Simule adivinhacao de um numero entre 1 e 100 usando busca binaria.
+Exercicio 51: Calcule soma e media de um vetor, tratando o vetor vazio.
+Exercicio 52: Inverta um vetor no proprio lugar usando dois indices.
+Exercicio 53: Rotacione um vetor k posicoes para a direita com tres inversoes.
+Exercicio 54: Separe pares e impares preservando a ordem original.
+Exercicio 55: Remova duplicatas sem alterar a ordem da primeira ocorrencia.
+Exercicio 56: Conte a frequencia de cada numero e apresente as chaves em ordem.
+Exercicio 57: Intercale dois vetores previamente ordenados em O(n + m).
+Exercicio 58: Calcule a intersecao de dois vetores sem repeticoes.
+Exercicio 59: Calcule a uniao ordenada de dois vetores sem repeticoes.
+Exercicio 60: Ache o unico ausente em 0..=n, dados n numeros distintos nesse intervalo.
+Exercicio 61: Implemente busca linear retornando a primeira posicao encontrada.
+Exercicio 62: Implemente busca binaria em uma fatia previamente ordenada.
+Exercicio 63: Ordene com bubble sort e pare cedo quando nao houver trocas.
+Exercicio 64: Ordene com selection sort selecionando o menor restante.
+Exercicio 65: Ordene com insertion sort deslocando os elementos maiores.
+Exercicio 66: Implemente merge sort recursivo, com tempo O(n log n).
+Exercicio 67: Implemente quicksort no proprio vetor com particao de Lomuto.
+Exercicio 68: Ordene bytes com counting sort, usando 256 contadores.
+Exercicio 69: Ordene u32 com radix sort LSD, processando um byte por passagem.
+Exercicio 70: Encontre o k-esimo menor (k comeca em zero) usando quickselect.
+Exercicio 71: Verifique palindromos ignorando pontuacao e caixa, sem remover acentos.
+Exercicio 72: Conte vogais, consoantes ASCII e outros caracteres em um texto.
+Exercicio 73: Conte palavras separadas por espacos, tabulacoes ou quebras de linha.
+Exercicio 74: Inverta a ordem das palavras e normalize os espacos entre elas.
+Exercicio 75: Detecte anagramas ignorando caixa e espacos, preservando acentos.
+Exercicio 76: Comprima repeticoes consecutivas em pares (caractere, quantidade).
+Exercicio 77: Descomprima grupos RLE com limite de caracteres para a saida.
+Exercicio 78: Valide o balanceamento de parenteses, colchetes e chaves com uma pilha.
+Exercicio 79: Busque uma substring e retorne seu indice em bytes usando comparacao direta.
+Exercicio 80: Encontre todas as ocorrencias de uma substring com KMP em O(n + m).
+Exercicio 81: Transponha uma matriz retangular, rejeitando linhas de tamanhos diferentes.
+Exercicio 82: Some duas matrizes de dimensoes iguais validando seu formato.
+Exercicio 83: Multiplique matrizes compativeis usando tres lacos.
+Exercicio 84: Some as diagonais principal e secundaria de uma matriz quadrada.
+Exercicio 85: Construa a matriz identidade de ordem n.
+Exercicio 86: Percorra uma matriz retangular em espiral no sentido horario.
+Exercicio 87: Rotacione uma matriz quadrada 90 graus para a direita no proprio lugar.
+Exercicio 88: Responda somas em intervalos [inicio, fim) usando somas prefixadas.
+Exercicio 89: Ache a maior soma de k elementos consecutivos com janela deslizante.
+Exercicio 90: Encontre dois valores que somam o alvo em um vetor ordenado com dois ponteiros.
+Exercicio 91: Calcule fatorial recursivo e retorne None quando nao couber em u128.
+Exercicio 92: Calcule Fibonacci recursivo com memoizacao, evitando recalculos.
+Exercicio 93: Resolva a Torre de Hanoi e liste os movimentos para tres discos.
+Exercicio 94: Gere todos os subconjuntos por backtracking; use elementos distintos.
+Exercicio 95: Gere permutacoes distintas por trocas e backtracking.
+Exercicio 96: Resolva N rainhas sem conflitos de coluna ou diagonal.
+Exercicio 97: Encontre um caminho no labirinto com backtracking; true indica passagem.
+Exercicio 98: Calcule o minimo de moedas para um valor com programacao dinamica.
+Exercicio 99: Resolva a mochila 0/1: cada item (peso, valor) pode ser usado uma vez.
+Exercicio 100: Calcule o tamanho da maior subsequencia estritamente crescente em O(n log n).
+Exercicio 101: Implemente uma pilha generica com Vec: empilhar, desempilhar e consultar topo.
+Exercicio 102: Converta expressao infixa para posfixa com pilha de operadores.
+Exercicio 103: Avalie uma expressao posfixa de inteiros com uma pilha e operacoes verificadas.
+Exercicio 104: Implemente uma fila generica FIFO com VecDeque.
+Exercicio 105: Implemente uma fila circular com capacidade fixa e reaproveitamento de espaco.
+Exercicio 106: Use um deque para verificar palindromos comparando suas duas pontas.
+Exercicio 107: Construa uma lista simplesmente encadeada generica com Box e Option.
+Exercicio 108: Inverta uma lista encadeada transferindo os nos sem clonar valores.
+Exercicio 109: Manipule uma lista duplamente encadeada com LinkedList da biblioteca padrao.
+Exercicio 110: Ache o proximo elemento maior a direita usando pilha monotonica em O(n).
+Exercicio 111: Crie uma agenda com HashMap: inserir, atualizar, consultar e remover.
+Exercicio 112: Conte palavras com HashMap ignorando caixa e pontuacao.
+Exercicio 113: Encontre a primeira repeticao em um fluxo de numeros com HashSet.
+Exercicio 114: Agrupe palavras anagramas usando a sequencia ordenada de caracteres como chave.
+Exercicio 115: Resolva two sum em vetor nao ordenado com HashMap em tempo medio O(n).
+Exercicio 116: Conte subvetores com soma k usando prefixos e tabela de frequencias.
+Exercicio 117: Implemente um cache LRU com HashMap e VecDeque.
+Exercicio 118: Implemente tabela hash com colisoes resolvidas por encadeamento separado.
+Exercicio 119: Calcule diferenca e diferenca simetrica de conjuntos ordenados.
+Exercicio 120: Consulte um intervalo de chaves em um mapa ordenado BTreeMap.
+Exercicio 121: Implemente insercao e busca em uma arvore binaria de busca sem duplicatas.
+Exercicio 122: Percorra uma arvore binaria em pre-ordem, em-ordem e pos-ordem.
+Exercicio 123: Calcule altura em numero de nos e quantidade de folhas de uma arvore.
+Exercicio 124: Valide uma BST usando limites globais, sem permitir valores duplicados.
+Exercicio 125: Remova um valor de uma BST tratando nos com zero, um ou dois filhos.
+Exercicio 126: Use BinaryHeap como fila de prioridade para atender tarefas urgentes primeiro.
+Exercicio 127: Implemente um min-heap binario manual com insercao e extracao em O(log n).
+Exercicio 128: Encontre os k maiores valores com um min-heap de tamanho k.
+Exercicio 129: Implemente heapsort no proprio vetor em O(n log n).
+Exercicio 130: Mantenha a mediana de um fluxo de inteiros usando dois heaps.
+Exercicio 131: Represente um grafo nao direcionado por listas de adjacencia e calcule graus.
+Exercicio 132: Percorra um grafo em largura usando uma fila e marcacao de visitados.
+Exercicio 133: Percorra um grafo em profundidade usando uma pilha explicita.
+Exercicio 134: Identifique componentes conexas de um grafo nao direcionado.
+Exercicio 135: Detecte ciclos em um grafo direcionado usando tres cores e DFS.
+Exercicio 136: Ordene dependencias com o algoritmo topologico de Kahn, detectando ciclos.
+Exercicio 137: Calcule caminhos minimos com Dijkstra e pesos nao negativos.
+Exercicio 138: Use Bellman-Ford para pesos negativos e detecte ciclos negativos alcancaveis.
+Exercicio 139: Calcule distancias entre todos os pares de vertices com Floyd-Warshall.
+Exercicio 140: Encontre uma arvore geradora minima de um grafo nao direcionado com Kruskal.
+Exercicio 141: Implemente union-find com compressao de caminhos e uniao por tamanho.
+Exercicio 142: Implemente uma trie Unicode com insercao, busca exata e consulta de prefixos.
+Exercicio 143: Implemente uma arvore de Fenwick com atualizacao e soma prefixada em O(log n).
+Exercicio 144: Implemente uma arvore de segmentos iterativa para somas e atribuicoes pontuais.
+Exercicio 145: Reconstrua o menor caminho em numero de arestas usando BFS e predecessores.
+Exercicio 146: Pinte uma regiao conectada de uma imagem com flood fill iterativo.
+Exercicio 147: Resolva Sudoku 9x9 por backtracking, validando as pistas iniciais.
+Exercicio 148: Calcule distancia de edicao Levenshtein entre sequencias de caracteres Unicode.
+Exercicio 149: Selecione o maximo de atividades sem sobreposicao com um algoritmo guloso.
+Exercicio 150: Integre mapa, heap e arvore para codificar e decodificar texto com Huffman.
